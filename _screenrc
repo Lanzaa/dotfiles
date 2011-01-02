@@ -1,0 +1,11 @@
+defscrollback 10000
+altscreen on
+hardstatus on
+hardstatus alwayslastline
+msgwait 1
+
+## caption string "%?%F%{= Bk}%? %C%A %D %d-%m-%Y %{= kB} %t%= %?%F%{= Bk}%:%{= wk}%? %n "
+caption string "%?%F%{= Bk}%:%{= kw}%? %t%= %?%F%{= Bk}%:%{= wk}%? %n "
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m/%Y %{W}%c %{g}]'
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%?%{w}%+Lw%?%?%= %{g}][%{B} %d/%m/%Y %{W}%c %{g}]'
+hardstatus string '%{= kG}[ %{G}%H %{g} %l][%= %{= kw}%?%-Lw%?%F%{= kr}(%{W}%n*%f%t%?(%u)%?%{= r})%?%{w}%+Lw%?%= %{g}][ %{W}%c %{B}%D %d/%m/%Y %{g}]'
