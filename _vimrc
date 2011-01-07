@@ -1,3 +1,4 @@
+set nocompatible
 set expandtab
 set hlsearch
 set incsearch
