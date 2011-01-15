@@ -40,6 +40,6 @@ URxvt*scrollBar: False
 URxvt*secondaryScroll: True
 URxvt*saveLines: 8000
 
-URxvt.perl-ext-common : default,matcher
+URxvt.perl-ext-common : default,tabbed,matcher
 URxvt.urlLauncher     : firefox
 URxvt.matcher.button  : 1
