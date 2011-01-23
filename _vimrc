@@ -28,3 +28,5 @@ augroup templates
     autocmd BufNewFile *.markdown   source ./.template.markdown
     autocmd BufNewFile *.java       execute "normal Ipublic class " . expand('%:t:r') . "\n{\n}\<Esc>2G"
 augroup END
+
+map  :w!<CR>:!aspell -c %<CR>:e! %<CR>
