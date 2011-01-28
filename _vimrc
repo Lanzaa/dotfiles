@@ -1,4 +1,6 @@
 set nocompatible
+
+set autoindent
 set expandtab
 set hlsearch
 set incsearch
@@ -10,6 +12,7 @@ set showmatch
 set softtabstop=4 " makes spaces feel like tab to backspace
 set tabstop=4
 set tildeop
+
 filetype plugin indent on
 syntax on
 
