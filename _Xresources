@@ -28,6 +28,9 @@ URxvt.depth:32
 URxvt*foreground:White
 URxvt*background:[90]Black
 
+URxvt.geometry: 156x36
+URxvt.visualBell: true
+
 ! fonts
 ! run "fc-list" for a list of available fonts
 ! URxvt*font: xft:Monospace:pixelsize=12
