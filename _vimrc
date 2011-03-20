@@ -32,4 +32,6 @@ augroup templates
     autocmd BufNewFile *.java       execute "normal Ipublic class " . expand('%:t:r') . "\n{\n}\<Esc>2G"
 augroup END
 
+au BufNewFile,BufRead *.rkt set filetype=scheme
+
 map  :w!<CR>:!aspell -c %<CR>:e! %<CR>
