@@ -3,6 +3,7 @@ set nocompatible
 set autoindent
 set expandtab
 set hlsearch
+set backspace=indent,eol,start
 set incsearch
 set nonu
 set scrolloff=3
