@@ -1,6 +1,7 @@
 set nocompatible
 
 set autoindent
+set colorcolumn=80
 set expandtab
 set hlsearch
 set backspace=indent,eol,start

@@ -2,6 +2,8 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+HISTSIZE=4000
+
 # try to open a screen session
 #[ -z "$STY" ] && exec screen 
 #if [ $TERM -eq "xterm" ] then
