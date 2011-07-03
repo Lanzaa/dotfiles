@@ -28,7 +28,7 @@ URxvt.depth:32
 URxvt*foreground:White
 URxvt*background:[90]Black
 
-URxvt.geometry: 156x36
+! URxvt.geometry: 156x36
 URxvt.visualBell: true
 
 ! fonts
@@ -46,3 +46,5 @@ URxvt*saveLines: 8000
 URxvt.perl-ext-common : default,tabbed,matcher
 URxvt.urlLauncher     : firefox
 URxvt.matcher.button  : 1
+
+urxvt*termName: rxvt-256color
