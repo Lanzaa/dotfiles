@@ -2,7 +2,7 @@
 	email = lanzaa@gmail.com
 	name = Colin B.
 [core]
-	editor = /usr/bin/vim
+	editor = vim
 	autocrlf = input
 	excludesfile = /home/lanzaa/.gitignore_global
 [achievement]

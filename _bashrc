@@ -1,49 +1,16 @@
-
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
 HISTSIZE=4000
 
-# try to open a screen session
-#[ -z "$STY" ] && exec screen 
-#if [ $TERM -eq "xterm" ] then
-#    exec /usr/bin/screen
-#fi
-#
-alias ls='ls --color=auto'
-alias la='ls -a --color=auto'
-PS1='[\u@\h \W]\$ '
-[[ ! -d "/opt/arch32" ]] && PS1="(chroot) $PS1"
+alias ls='ls -G'
+alias la='ls -a -G'
+PS1='[\u@\h \w]\$ '
 
-##alias tc='sudo truecrypt'
-##alias tcm='tc --fs-options="uid=$(id -u),gid=$(id -g)"'
-alias starcraftx="xinit /home/lanzaa/starcraft/chroot.sh -- :1"
-alias tcc="truecrypt ~/crypt.lappy /mnt/crypt"
-alias kk="konsole -e screen"
 alias units="units -v"
 
-#PYTHONSTARTUP="/home/lanzaa/.pythonrc.py"
-export EDITOR="/usr/bin/vim"
-export SVN_EDITOR="/usr/bin/vim"
-
-# screen related
-# from: http://dev-loki.blogspot.com/2010/05/gnu-screen-open-new-window-with-same.html
-function dupscreen {
-screen bash -c "cd \"$PWD\" && exec $SHELL" # --login"
-}
-alias ,d=dupscreen
+EDITOR="/usr/local/bin/vim"
 
 # git related
-alias git="git-achievements"
 alias gs="git status ."
 
-alias todo='pushd ~/todo\&ideas/; vim todo.md; git commit -a; popd;'
-
-## use Ctrl-x-e to open editor for current line
-
-export PERL_LOCAL_LIB_ROOT="/home/lanzaa/perl5";
-export PERL_MB_OPT="--install_base /home/lanzaa/perl5";
-export PERL_MM_OPT="INSTALL_BASE=/home/lanzaa/perl5";
-export PERL5LIB="/home/lanzaa/perl5/lib/perl5/x86_64-linux-thread-multi:/home/lanzaa/perl5/lib/perl5";
-export PATH="/home/lanzaa/perl5/bin:$PATH";
-alias steam="WINEDEBUG=-all wine /home/lanzaa/.wine/drive_c/Program\ Files/Steam/Steam.exe"

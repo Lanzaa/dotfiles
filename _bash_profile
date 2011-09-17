@@ -1,3 +1,0 @@
-##. $HOME/.bashrc
-export MOZ_DISABLE_PANGO=1
-export PATH="$PATH:~/.cabal/bin:~/bin:~/programming/git-achievements"
