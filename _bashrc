@@ -18,12 +18,13 @@ PS1='[\u@\h \W]\$ '
 ##alias tc='sudo truecrypt'
 ##alias tcm='tc --fs-options="uid=$(id -u),gid=$(id -g)"'
 alias starcraftx="xinit /home/lanzaa/starcraft/chroot.sh -- :1"
-alias tcc="truecrypt ~/Dropbox/crypt.lappy /mnt/crypt"
+alias tcc="truecrypt ~/crypt.lappy /mnt/crypt"
 alias kk="konsole -e screen"
 alias units="units -v"
 
 #PYTHONSTARTUP="/home/lanzaa/.pythonrc.py"
-EDITOR="/usr/bin/vim"
+export EDITOR="/usr/bin/vim"
+export SVN_EDITOR="/usr/bin/vim"
 
 # screen related
 # from: http://dev-loki.blogspot.com/2010/05/gnu-screen-open-new-window-with-same.html
