@@ -1,0 +1,12 @@
+[user]
+	email = lanzaa@gmail.com
+	name = Colin B.
+[core]
+	editor = /usr/bin/vim
+	autocrlf = input
+	excludesfile = /home/lanzaa/.gitignore_global
+[achievement]
+	upload = true
+
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
