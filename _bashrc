@@ -37,6 +37,8 @@ alias ,d=dupscreen
 alias git="git-achievements"
 alias gs="git status ."
 
+alias todo='pushd ~/todo\&ideas/; vim todo.md; git commit -a; popd;'
+
 ## use Ctrl-x-e to open editor for current line
 
 export PERL_LOCAL_LIB_ROOT="/home/lanzaa/perl5";
