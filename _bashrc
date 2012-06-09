@@ -13,11 +13,9 @@ HISTSIZE=4000
 alias ls='ls --color=auto'
 alias la='ls -a --color=auto'
 PS1='[\u@\h \W]\$ '
-[[ ! -d "/opt/arch32" ]] && PS1="(chroot) $PS1"
 
 ##alias tc='sudo truecrypt'
 ##alias tcm='tc --fs-options="uid=$(id -u),gid=$(id -g)"'
-alias starcraftx="xinit /home/lanzaa/starcraft/chroot.sh -- :1"
 alias tcc="truecrypt ~/crypt.lappy /mnt/crypt"
 alias kk="konsole -e screen"
 alias units="units -v"
@@ -34,7 +32,6 @@ screen bash -c "cd \"$PWD\" && exec $SHELL" # --login"
 alias ,d=dupscreen
 
 # git related
-alias git="git-achievements"
 alias gs="git status ."
 
 alias todo='pushd ~/todo\&ideas/; vim todo.md; git commit -a; popd;'

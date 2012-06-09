@@ -28,7 +28,7 @@ URxvt.depth:32
 URxvt*foreground:White
 URxvt*background:[90]Black
 
-! URxvt.geometry: 156x36
+URxvt.geometry: 156x36
 URxvt.visualBell: true
 
 ! fonts

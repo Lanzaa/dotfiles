@@ -14,6 +14,7 @@ set showmatch
 set softtabstop=4 " makes spaces feel like tab to backspace
 set tabstop=4
 set tildeop
+set background=dark
 
 filetype plugin indent on
 syntax on
@@ -34,8 +35,10 @@ augroup templates
     autocmd BufNewFile *.java       execute "normal Ipublic class " . expand('%:t:r') . "\n{\n}\<Esc>2G"
 augroup END
 
-au BufNewFile,BufRead *.rkt set filetype=scheme
+autocmd BufNewFile,BufRead *.rkt set filetype=scheme
+" autocmd BufNewFile,BufRead *.md setlocal spell spelllang=en_us
 
 " map  :w!<CR>:!aspell -c %<CR>:e! %<CR>
 
 map <F2> :NERDTreeToggle<CR>
+map <F3> :setlocal spell! spelllang=en_us<CR>
