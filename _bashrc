@@ -2,7 +2,7 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
-HISTSIZE=4000
+HISTSIZE=40000
 
 # try to open a screen session
 #[ -z "$STY" ] && exec screen 
@@ -43,4 +43,3 @@ export PERL_MB_OPT="--install_base /home/lanzaa/perl5";
 export PERL_MM_OPT="INSTALL_BASE=/home/lanzaa/perl5";
 export PERL5LIB="/home/lanzaa/perl5/lib/perl5/x86_64-linux-thread-multi:/home/lanzaa/perl5/lib/perl5";
 export PATH="/home/lanzaa/perl5/bin:$PATH";
-alias steam="WINEDEBUG=-all wine /home/lanzaa/.wine/drive_c/Program\ Files/Steam/Steam.exe"

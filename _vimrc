@@ -42,3 +42,4 @@ autocmd BufNewFile,BufRead *.rkt set filetype=scheme
 
 map <F2> :NERDTreeToggle<CR>
 map <F3> :setlocal spell! spelllang=en_us<CR>
+map <F4> :setlocal list!<CR>
